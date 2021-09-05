@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Website</title> <!-- Head has the info about the website
+    such as: title, style, stylesheet, script-->
+<!-- internal styling is used in the Head-->
+<!-- Internal style example  This makes all the <p> tags brown -->
+    <link rel="stylesheet" href="styles.css">
+
+
+<style> 
+  
+
+
+</style>
+<!-- 3rd and last but most common is CSS file sheet
+    We prepared CSS in a different file. Thus, our html becomes 
+    clean.-->
+
+</head>
+
+    <body style = "background: rgb(151, 247, 237); color: darkblue"> 
+<!--inline styling: we use the style keyword 
+    just inside the opening keyword.-->
+
+   <!--we use body tag to change the background of the page.-->
+    <!-- : This is to comment
+    Actual code will be typed in the body -->
+<!-- Almost all tags have opening and closing tags.-->
+<h1 style = "color:red"> This h1 is the biggest/largest</h1> 
+<!-- style is from CSS-->
+<h2 style= "color:darkblue; font-size: 30px;font-family:cursive"> This is heading h2 for my website</h2>
+<!-- For more than one styles we add with ";" between them. -->
+
+<h3 style= " color:#4b0082"> This is heading 3</h3>
+<!-- We can use color codes for more colors: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value-->
+<h4 style="color:#080f08; font-size: 30px; font-family: monospace"> This one is h4</h4>
+<h5 style="text-align: center; background-color: yellowgreen;"> This is h5</h5>
+<h4 style="text-align:right;"> This is h4</h4> <!-- justify: streching out the text-->
+<h6> This is/was the smallest one</h6>
+<!--developer mozilla is the official reference document for this-->
+<h2 style=" background-color: yellowgreen;"> Lets color the background</h2>
+<h4 class= "my-custom-style" > Heading 4</h4>    
+<p>
+    How are you? guys 
+</p>
+
+<h6 id="my-unique-id"> My unique id with the name my-unique-id</h6>
+
+<p>
+They live in USA. <br>
+Their most <i>paramount</i> <br> priority is <b>freedom</b>.<br>
+There are <strong> many free <br>
+
+<u></strong> <b><i><strong>states</strong></i></b></u>.<br>
+<hr>
+
+<!--adding image: type img then get the following syntax-->
+<img id="sun-flower"
+src="https://images.pexels.com/photos/736230/
+pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+alt="the lord of the flowers is ROSE">
+<hr>
+<!-- lets add a hyper link: just enter a then tap enter 
+* we get href="" attribute
+* we use target="_blank" to open it in new tab-->
+
+<a 
+href="http://cevikpansiyon.com/"
+target= "_blank"> Cevik Pansiyon</a>
+
+<!--lets add an image link
+-->
+
+<a 
+href="http://cevikpansiyon.com/"
+target="_blank"> 
+<img id="image-style"
+src="http://cevikpansiyon.com/uploads/photos/icerikler/20140913_101536.jpg" alt="Cevik pansiyon logo"></a>
+<img 
+
+
+<section class="list-section">
+    <h4 id="my-custom-style"> <b></b><center>BOOKS</center></b></h4>  <ul style="list-style-type:lower-roman">
+    <li>Scientific</li>
+    <li>Fiction</li>
+    <li>Love</li>
+    <li>Research</li>
+    </ul>
+
+    <h4> Flowers</h4>
+
+    <ol type="A">
+        <li>Rose</li>
+        <li>Tulip</li>
+        <li>Daisy</li>
+        <li>....</li>
+    </ol>
+    <hr>    
+    <hr>
+    
+    <h3> Web Tables</h3>
+<!--tr: Table row, td: table date-->
+
+<table>
+<thead> 
+    <th> Name</th>
+    <th> City</th>
+    <th> Phone</th>
+</thead>
+  
+<tr> 
+    <td> John</td>
+    <td> Dallas</td>
+    <td> 1234</td>
+</tr>
+
+<tr> 
+    <td> Sam</td>
+    <td> LA</td>
+    <td> 5678</td>
+</tr>
+</table>
+</section>
+
+<h6 class="my-custom-style"> IFRAMES</h6>
+<!--iframes are pages in a page
+it may make the web page slow because of the videos pics etc
+in the added iframe-->
+
+<iframe id="frame" src="http://cevikpansiyon.com/icerikdetay.php?icerikID=10" frameborder="100px">
+</iframe>
+<br>
+<br>
+<br>
+<!--is the login/signup forms used to login to the web page. -->
+
+
+<section class="forms-div">
+
+<h6 class="my-custom-style"> FORMS</h6>
+<form action="">
+<fieldset style="border: solid; border-radius: 5px;">
+    <!-- fieldset is just for appearance: it creates border around
+    the form elements-->
+        <legend> User Information</legend>
+    <!--again another good appearance adda a caption -->
+
+
+<label style="font-size:20px" >Enter First Name</label><br>
+<input type="TextBox" style="font-size:20px"  placeholder="This is a placeholder!!"></input>
+<label style="font-size:20px"> Enter Last name </label><br>
+<input type="Text" style="font-size: 20px" value="This is a value" ></input> <br>
+<label style="font-size: 20px;">Enter your Email</label><br>
+<input type="email" style="font-size: 20px;">
+<br>
+<label type="Text">Enter Your Message</label><br>
+<textarea name="Describe" id="desc" cols="24" rows="10" placeholder="add your message here"></textarea>
+
+<button></button>
+
+<br>
+<br>
+<input type="submit" style="font-size:30px" value="SAVE"> <br>
+<!--The default for submit is Submit. We can change it with value=""-->
+<!-- we could make it also with button-->
+<button style="font-size: 30px;">Submit</button>
+</fieldset>
+</form>
+
+
+<h6 class="my-custom-style">---- Checkbox ----</h6>
+<label for="">Choose from the menu</label>
+<br>
+<input type="checkbox">
+<label style="font-size: 20px;"> Cheese</label><br>
+<input type="checkbox">
+<label style="font-size: 20px;"> mushroom</label><br>
+<input type="checkbox">
+<label style="font-size: 20px;"> sausage</label><br>
+<input type="checkbox">
+<label style="font-size: 20px;"> kashar :)</label><br>
+
+<h6 class="my-custom-style">---- Radio Button ----</h6>
+
+<label style="font-size: 20px;">Choose gender</label>
+<br>
+
+
+<input  type="Radio" name="gender">
+<label style="font-size: 15px ;"> Male</label>
+
+<input  type="Radio" name="gender">
+<label style="font-size: 15px ;"> Female</label>
+
+<input  type="Radio" name="gender">
+<label style="font-size: 15px ;"> Do not want to specify</label>
+</section>
+
+
+
+<h6 class="my-custom-style">---- Dropdown ----</h6>
+
+<form action="">
+
+    <label style="font-size: 20px;">Choose your car</label><br>
+    <select name="car options" id="cars">
+    <option value="Ford">Ford</option>
+    <option value="Toyota" selected >Toyota</option>
+    <option value="Nissan">Nissan</option>
+    <option value="BMW">BMW</option>
+    </select>
+</form>
+
+<h6 class="my-custom-style">---- Dates ----</h6>
+<form action="">
+<label style="font-size: 20px;">Choose appointment date</label><br>
+<input type="date"><br>
+<input type="submit">
+<hr> <br><br>
+
+<label style="font-size: 20px;">Select appointment time</label><br>
+<input type="time"><br>
+<input type="submit"><br>
+
+<label style="font-size:20px">Choose appointment date and time</label><br>
+<!--Lets combine date and time-->
+<input type="datetime-local">
+
+</form>
+
+<h6 class="my-custom-style">---- Color Picker ----</h6>
+<form action="">
+<label style="font-size: 20px;">Color selection</label><br>
+<input type="color">
+</form>
+
+<h6 class="my-custom-style">---- File Upload ----</h6>
+<form action=""> 
+<input type="file"><br>
+<input type="submit">
+</form>
+
+
+
+
+<h6 class="my-custom-style">---- File Upload ----</h6>
+<!--The best way is to embed the video with iframe
+open the youtube video then share
+click on embed then copy
+pate this directly on the html doc.
+It will automatically upload the video as iframe with good features-->
+
+<iframe src="" frameborder="0"></iframe>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/QhuX0EeR5Yg" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h6 class="my-custom-style">---- Div ----</h6>
+
+<h6 class="my-custom-style">---- Alerts ----</h6>
+<button onclick="alert ('This is a popup window created via JS alert')""  
+type="button" style="font-size: 20px;">  Click me</button>
+
+
+</body>
+
+
+
+
+
+</html>
