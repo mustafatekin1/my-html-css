@@ -1,0 +1,11 @@
+junit35_36 ==> framework
+.idea  ==> Intellij file. It has project specific files.  Do not touch this.
+src   ==> source folder. It is used to create the classes and methods. It is used for either test or development
+    * main ==> usually for developlent
+    * test ==> usually for testing
+
+pom.xml ==> Project Object Model
+            most important file in a Maven project.
+
+external libraries ==> The libraries which are imported libraries/jar files/plugins/dependencies into this project
+Scratches  ==> Scratch to take notes.
